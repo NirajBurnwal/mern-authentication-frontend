@@ -16,7 +16,7 @@ const Dashboard = () => {
     const DashboardValid = async () => {
         let token = localStorage.getItem("usersdatatoken");
         // console.log(token);
-        const res = await fetch("/validuser", {
+        const res = await fetch("https://mern-authentication-application.onrender.com/validuser", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

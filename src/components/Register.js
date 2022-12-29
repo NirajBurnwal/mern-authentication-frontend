@@ -43,7 +43,7 @@ const Register = () => {
         } else if (password !== cpassword) {
             alert("password and confirm password do not match")
         } else {
-            const data = await fetch("/register", {
+            const data = await fetch("https://mern-authentication-application.onrender.com/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
