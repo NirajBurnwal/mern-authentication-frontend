@@ -34,7 +34,7 @@ const Login = () => {
             alert("Please enter password")
         } else {
             // console.log("login successful");
-            const data = await fetch("/login", {
+            const data = await fetch("https://mern-authentication-application.onrender.com/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
